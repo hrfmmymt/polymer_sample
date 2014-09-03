@@ -1,0 +1,51 @@
+doctype html
+html
+head
+    meta(charaset='utf-8')
+    script(src='bower_components/platform/platform.js')
+    link(rel='import', href='bower_components/core-toolbar/core-toolbar.html')
+    link(rel='import', href='bower_components/core-header-panel/core-header-panel.html')
+    link(rel='import', href='bower_components/core-icons/core-icons.html')
+    link(rel='import', href='bower_components/paper-tabs/paper-tabs.html')
+    link(rel='import', href='bower_components/paper-icon-button/paper-icon-button.html')
+    link(rel='import', href='bower_components/paper-checkbox/paper-checkbox.html')
+    link(rel='import', href='bower_components/paper-toggle-button/paper-toggle-button.html')
+    link(rel='import', href='bower_components/paper-radio-group/paper-radio-group.html')
+    link(rel='import', href='bower_components/paper-fab/paper-fab.html')
+    link(rel='import', href='bower_components/paper-slider/paper-slider.html')
+    link(rel='import', href='bower_components/paper-progress/paper-progress.html')
+    link(rel='import', href='bower_components/paper-input/paper-input.html')
+    link(rel='stylesheet', href='css/style.css')
+      
+  body(fullbleed='fullbleed', unresolved='unresolved')
+    core-header-panel
+      core-toolbar.medium-tall
+        paper-icon-button#navicon(icon='arrow-back')
+        span(flex='flex') Title
+        paper-icon-button#searchbutton(icon='search')
+        paper-tabs.bottom.fit
+          paper-tab ONE
+          paper-tab TWO
+      p
+        paper-button(label='flat button') Button
+      p
+        paper-button(label='raised button', raisedbutton='raisedButton') Button
+      p
+        paper-checkbox
+      p
+        paper-checkbox(checked='checked')
+      p
+        paper-toggle-button
+      p
+        paper-radio-group(selected='small')
+          paper-radio-button(name='small', label='Small')
+          paper-radio-button(name='medium', label='Medium')
+          paper-radio-button(name='large', label='Large')
+      p
+        paper-fab(icon='favorite')
+      p
+        paper-slider(min='10', max='200', value='110')
+      p
+        paper-progress(value='10')
+      p
+        paper-input(label='Your Name')
